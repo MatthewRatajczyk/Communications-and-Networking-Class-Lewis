@@ -1,0 +1,6 @@
+# Communications-and-Networking-Class-Lewis
+A repo of the code for the FA18-CPSC-48000-001: Communications and Networking class from lewis university
+
+In the chat.py you are going to need to add consumer_key,consumer_secret,access_token, and an access_secret. You can get theses from your Twitter API devlopment. Either way, your going to want to run chat_server.py this will be the backend. As a side note, chat_server.py will create and write to a file a log of who connect there IP and port and as well as evey message/room they make. Afterwards run chat.py and make sure chat_client.py is in the same folder it check for that localy.
+
+Also, you don't need the twitter function it will run without it and won't display the option to use it if it can't authenticate, and if there was a key typed in and it failed it would return and print what when while authenticating with Twitter. How it works is multiple chat.py can connect to one chat_server.py so if you want to use this for some god forsaken reason you will have to give the machine's IP for chat.py people to connect, you will have to pass it that in the IP and port number. It says this in the --help, but that would be >python chat.py connect 127.0.0.1 8080, if you were running chat_server localy. Also for the server you don't need to pass it anything you just run >python chat_server.py. 
